@@ -3,7 +3,9 @@ const router = express.Router();
 const Signup = require('../controllers/signup');
 
 router.post('/signup', (req, res) => {
-	console.log('yaha_aaya')
+	console.log('yaha_aaya_11')
+	console.log(req.body)
+	console.log(typeof req.body)
 	let name = req.body.name;
 	let age = req.body.age;
 	console.log(name + ' ' + age)
